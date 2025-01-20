@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#crsr {
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+  /* background-color: #fff; */
+  border: 1px solid #867a7a;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: #0b0b0b;
+  padding: 25vh 15vw;
+}
+.line {
+  /* background-color: red; */
+  overflow: hidden;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 3vw;
+}
+#lin1-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+#lin1-part1 h5,
+#lin1-part1 h6 {
+  font-size: 2vw;
+  font-weight: 500;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#lin1-part1 h5 {
+  width: 5vw;
+  text-align: right;
+}
+.line h1 {
+  font-size: 5.5vw;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.line h2 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  animation-name: anime;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes anime {
+  0% {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    -webkit-text-stroke: 0.1px white;
+    color: #fff;
+    opacity: 1;
+  }
+  48% {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    -webkit-text-stroke: 0.1px white;
+    color: #fff;
+    opacity: 0;
+  }
+  50% {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    -webkit-text-stroke: 0.1px white;
+    color: transparent;
+    opacity: 1;
+  }
+  100% {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    -webkit-text-stroke: 0.1px white;
+    color: transparent;
+    opacity: 0;
+  }
+}
+#main {
+  position: relative;
+  background-color: #111;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+}
+
+#page1 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.3vw 5vw;
+}
+
+#nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+#nav2 h4 {
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+.hero {
+  /* background-color: #696969; */
+  width: 75%;
+  margin-left: 25%;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+.hero:nth-child(2) {
+  margin-top: 15vh;
+}
+
+.hero h1 {
+  font-size: 7vw;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  line-height: 7vw;
+}
+#hero-3 h1 {
+  font-size: 7vw;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  line-height: 7vw;
+  border-bottom: 0.5vw solid #fff;
+  padding-bottom: 1vw;
+  transition: all 0.5s ease-in-out;
+}
+
+#hero-3:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  padding-top: 20vh;
+  background-color: #151515;
+  position: relative;
+}
+
+#video-container {
+  height: 60vh;
+  width: 70vw;
+  position: relative;
+  left: 30%;
+  background-image: url(https://www.freepik.com/free-photo/fashion-designer-working-design_18947063.htm#fromView=search&page=1&position=1&uuid=54b12c79-7a79-4116-a23b-dabfcf216570&new_detail=true);
+}
+#video-container img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+}
+#videocrsr {
+  background-color: orange;
+  height: 8vw;
+  width: 8vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+#videocrsr i {
+  font-size: 4vw;
+}
+
+#video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+}
+#page4 {
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+  padding-top: 5vh;
+}
+#page4-content {
+  width: 72vw;
+  margin-left: 28%;
+}
+#page4-content
