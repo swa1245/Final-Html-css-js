@@ -10,6 +10,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 #crsr {
   height: 2vw;
@@ -99,7 +100,7 @@ body {
 }
 #main {
   position: relative;
-  background-color: #111;
+  background-color: #151515;
 }
 
 #page1 {
@@ -216,13 +217,194 @@ body {
   background-color: #151515;
 }
 #page4 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #151515;
-  padding-top: 5vh;
+  padding: 5vh 0;
 }
 #page4-content {
   width: 72vw;
   margin-left: 28%;
 }
-#page4-content
+#page4-content h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#page4-content .underline {
+  height: 1.5px;
+  width: 100%;
+  background-color: #fff;
+  margin: 5vw 0;
+}
+#page4-content > p {
+  font-size: 1.8vw;
+  width: 50%;
+  margin-bottom: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#page4Flex {
+  display: flex;
+  /* align-items: center;
+  justify-content: space-between; */
+  gap: 3vw;
+  margin-top: 5vw;
+}
+#page4Flex img {
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
+#page4Flex p {
+  width: 30%;
+  font-size: 1.2vw;
+  margin-left: 1vw;
+}
+
+#page4blue {
+  background-color: #3f7aef;
+  /* display: flex; */
+  width: 25vw;
+  padding: 3vw 0;
+  position: relative;
+  margin-top: -22vh;
+  margin-left: 12vw;
+}
+.BLUE {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vw;
+  border-bottom: #fff solid 1px;
+}
+.BLUE h4 {
+  font-size: 1.3vw;
+}
+.BLUE p {
+  width: 50%;
+}
+#page41 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#page5 {
+  min-height: 100vh;
+  width: 100%;
+  /* padding: 5vw 0vw; */
+  background-color: #151515;
+  position: relative;
+}
+.elem {
+  white-space: nowrap;
+  /* overflow-x: auto; */
+  overflow-x: hidden;
+}
+
+.elem h1 {
+  font-size: 7vw;
+  margin-right: 10px;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  color: transparent;
+  animation: anim;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.elem2 {
+  white-space: nowrap;
+  /* overflow-x: auto; */
+}
+.elem2 h1 {
+  font-size: 7vw;
+  margin-right: 10px;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  color: transparent;
+  transform: translateX(calc(-100%) -20px);
+  animation-name: anim;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+@-webkit-keyframes anim {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@keyframes anim {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+#footer {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  padding-left: 28vw;
+}
+#footer h1 {
+  font-size: 7vw;
+  width: 60vw;
+  text-transform: uppercase;
+  position: relative;
+}
+.underline {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  margin: 2vw 0;
+}
+#footer-div {
+  display: flex;
+  justify-content: space-between;
+  justify-items: flex-start;
+  padding-right: 12vw;
+}
+#footer h1::before {
+  content: "04";
+  position: absolute;
+  font-size: 5vw;
+  left: -20%;
+  top: -15%;
+  font-weight: 500;
+}
+
+#footer-div h6 {
+  font-size: 0.9vw;
+  margin-bottom: 1vw;
+}
+.box {
+  width: 20%;
+}
+#footer-div h5 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin: 0.2vh 0;
+}
+#footer > h5 {
+  font-weight: 500;
+}
